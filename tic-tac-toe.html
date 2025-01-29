@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" href="tic-tac-toe.css">
+</head>
+<body>
+<div class="container">
+  <h1>Tic Tac Toe</h1>
+  <div class="choice">
+    <label for="player-choice">Choose your symbol:</label>
+    <select id="player-choice">
+      <option value="X">X</option>
+      <option value="O">O</option>
+    </select>
+  </div>
+  <button class="start-btn" onclick="startGame()">Start Game</button>
+  <table class="board" cellspacing="0">
+    <tr>
+      <td id="cell-0" onclick="cellClicked(0)"></td>
+      <td id="cell-1" onclick="cellClicked(1)"></td>
+      <td id="cell-2" onclick="cellClicked(2)"></td>
+    </tr>
+    <tr>
+      <td id="cell-3" onclick="cellClicked(3)"></td>
+      <td id="cell-4" onclick="cellClicked(4)"></td>
+      <td id="cell-5" onclick="cellClicked(5)"></td>
+    </tr>
+    <tr>
+      <td id="cell-6" onclick="cellClicked(6)"></td>
+      <td id="cell-7" onclick="cellClicked(7)"></td>
+      <td id="cell-8" onclick="cellClicked(8)"></td>
+    </tr>
+  </table>
+  <div class="message" id="message"></div>
+  <button class="restart-btn" onclick="restartGame()">Restart Game</button>
+</div>
+
+<script src="tic-tae-toe.js"></script>
+
+</body>
+</html>
